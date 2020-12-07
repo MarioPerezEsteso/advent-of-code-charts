@@ -1,4 +1,4 @@
-const LeaderBoardJsonTransformer = require('./LeaderBoardJsonTransformer').default;
+const leaderBoardJsonTransformer = require('./LeaderBoardJsonTransformer');
 
 
 test('Transform empty leaderboard', () => {
@@ -8,7 +8,7 @@ test('Transform empty leaderboard', () => {
     "owner_id": "123456"
   }
 
-  let result = LeaderBoardJsonTransformer(jsonData)
+  let result = leaderBoardJsonTransformer(jsonData)
 
   expect(result).toEqual({
     labels: [],
@@ -34,7 +34,7 @@ test('Transform leaderboard with a single member that has not resolved any probl
     "owner_id": "123456"
   }
 
-  let result = LeaderBoardJsonTransformer(jsonData)
+  let result = leaderBoardJsonTransformer(jsonData)
 
   expect(result).toEqual({
     labels: [],
@@ -120,7 +120,7 @@ test('Transform leaderboard with multiple members', () => {
     "event": "2020"
   }
 
-  let result = LeaderBoardJsonTransformer(jsonData)
+  let result = leaderBoardJsonTransformer(jsonData)
 
   expect(result).toEqual({
     labels: ['2', '3'],

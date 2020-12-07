@@ -1,4 +1,4 @@
-const SortAlphabetically = require('./SortAlphabetically');
+const sortAlphabetically = require('./SortAlphabetically');
 
 
 test('sort alphabetically by name ASC', () => {
@@ -20,7 +20,7 @@ test('sort alphabetically by name ASC', () => {
     ]
   }
 
-  let sortedDatasets = data.datasets.sort(SortAlphabetically('label', 'ASC'))
+  let sortedDatasets = data.datasets.sort(sortAlphabetically('label', 'ASC'))
 
   expect(sortedDatasets).toEqual([
     {
@@ -57,7 +57,7 @@ test('sort alphabetically by name DESC', () => {
     ]
   }
 
-  let sortedDatasets = data.datasets.sort(SortAlphabetically('label', 'DESC'))
+  let sortedDatasets = data.datasets.sort(sortAlphabetically('label', 'DESC'))
 
   expect(sortedDatasets).toEqual([
     { 

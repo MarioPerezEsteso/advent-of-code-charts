@@ -1,4 +1,4 @@
-const LeaderBoardJsonTransformer = (apiJsonResponse) => {
+const leaderBoardJsonTransformer = (apiJsonResponse) => {
     let chartData = {
         labels: [],
         datasets: []
@@ -79,4 +79,4 @@ const LeaderBoardJsonTransformer = (apiJsonResponse) => {
     return chartData
 }
 
-export default LeaderBoardJsonTransformer
+module.exports = leaderBoardJsonTransformer
