@@ -41,7 +41,10 @@ test('Transform leaderboard with a single member that has not resolved any probl
     datasets: [
       {
         label: 'Pepito',
-        data: []
+        data: [],
+        fill: false,
+        backgroundColor: '#760663',
+        borderColor: '#760663'
       }
     ]
   });
@@ -127,11 +130,17 @@ test('Transform leaderboard with multiple members', () => {
     datasets: [
       {
         label: 'Javi',
-        data: [2, 4]
+        data: [2, 4],
+        fill: false,
+        backgroundColor: '#4AC634',
+        borderColor: '#4AC634'
       },
       {
         label: 'Mario',
-        data: [4, 7]
+        data: [4, 7],
+        fill: false,
+        backgroundColor: '#F2FA76',
+        borderColor: '#F2FA76'
       }
     ]
   });

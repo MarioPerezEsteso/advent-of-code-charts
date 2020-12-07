@@ -1,3 +1,4 @@
+const stringToHexColor = require("./StringToHexColor");
 const sortAlphabetically = require("./SortAlphabetically");
 
 const leaderBoardJsonTransformer = (apiJsonResponse) => {
@@ -62,9 +63,14 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
     chartData.labels = Object.keys(leaderBoardByDay)
 
     Object.entries(userPointsByDay).forEach(([userId, pointsByDay]) => {
+        let userIdAsRGBColor = stringToHexColor(userId);
+
         let dataset = {
-            'label': apiJsonResponse['members'][userId]['name'],
-            'data': []
+            label: apiJsonResponse['members'][userId]['name'],
+            data: [],
+            fill: false,
+            backgroundColor: userIdAsRGBColor,
+            borderColor: userIdAsRGBColor
         }
 
         Object.keys(pointsByDay).sort().forEach(day => {
