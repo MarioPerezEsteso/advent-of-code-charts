@@ -63,14 +63,14 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
     chartData.labels = Object.keys(leaderBoardByDay)
 
     Object.entries(userPointsByDay).forEach(([userId, pointsByDay]) => {
-        let userIdAsRGBColor = stringToHexColor(userId);
+        let userAsRGBColor = stringToHexColor(apiJsonResponse['members'][userId]['name'] + userId);
 
         let dataset = {
             label: apiJsonResponse['members'][userId]['name'],
             data: [],
             fill: false,
-            backgroundColor: userIdAsRGBColor,
-            borderColor: userIdAsRGBColor
+            backgroundColor: userAsRGBColor,
+            borderColor: userAsRGBColor
         }
 
         Object.keys(pointsByDay).sort().forEach(day => {

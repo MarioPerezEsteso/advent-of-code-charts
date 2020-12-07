@@ -43,8 +43,8 @@ test('Transform leaderboard with a single member that has not resolved any probl
         label: 'Pepito',
         data: [],
         fill: false,
-        backgroundColor: '#760663',
-        borderColor: '#760663'
+        backgroundColor: '#43456C',
+        borderColor: '#43456C'
       }
     ]
   });
@@ -132,15 +132,15 @@ test('Transform leaderboard with multiple members', () => {
         label: 'Javi',
         data: [2, 4],
         fill: false,
-        backgroundColor: '#4AC634',
-        borderColor: '#4AC634'
+        backgroundColor: '#20E0AA',
+        borderColor: '#20E0AA'
       },
       {
         label: 'Mario',
         data: [4, 7],
         fill: false,
-        backgroundColor: '#F2FA76',
-        borderColor: '#F2FA76'
+        backgroundColor: '#71CF12',
+        borderColor: '#71CF12'
       }
     ]
   });
