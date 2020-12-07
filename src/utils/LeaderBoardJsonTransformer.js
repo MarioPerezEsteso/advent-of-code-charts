@@ -1,3 +1,5 @@
+const sortAlphabetically = require("./SortAlphabetically");
+
 const leaderBoardJsonTransformer = (apiJsonResponse) => {
     let chartData = {
         labels: [],
@@ -75,6 +77,8 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
 
         chartData.datasets.push(dataset);
     })
+
+    chartData.datasets = chartData.datasets.sort(sortAlphabetically('label', 'ASC'))
 
     return chartData
 }
