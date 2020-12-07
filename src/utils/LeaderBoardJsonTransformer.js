@@ -1,4 +1,7 @@
-const LeaderBoardJsonTransformer = (apiJsonResponse) => {
+const stringToHexColor = require("./StringToHexColor");
+const sortAlphabetically = require("./SortAlphabetically");
+
+const leaderBoardJsonTransformer = (apiJsonResponse) => {
     let chartData = {
         labels: [],
         datasets: []
@@ -60,9 +63,14 @@ const LeaderBoardJsonTransformer = (apiJsonResponse) => {
     chartData.labels = Object.keys(leaderBoardByDay)
 
     Object.entries(userPointsByDay).forEach(([userId, pointsByDay]) => {
+        let userAsRGBColor = stringToHexColor(apiJsonResponse['members'][userId]['name'] + userId);
+
         let dataset = {
-            'label': apiJsonResponse['members'][userId]['name'],
-            'data': []
+            label: apiJsonResponse['members'][userId]['name'],
+            data: [],
+            fill: false,
+            backgroundColor: userAsRGBColor,
+            borderColor: userAsRGBColor
         }
 
         Object.keys(pointsByDay).sort().forEach(day => {
@@ -76,7 +84,9 @@ const LeaderBoardJsonTransformer = (apiJsonResponse) => {
         chartData.datasets.push(dataset);
     })
 
+    chartData.datasets = chartData.datasets.sort(sortAlphabetically('label', 'ASC'))
+
     return chartData
 }
 
-export default LeaderBoardJsonTransformer
+module.exports = leaderBoardJsonTransformer
