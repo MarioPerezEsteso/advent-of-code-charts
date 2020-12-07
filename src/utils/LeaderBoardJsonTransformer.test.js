@@ -1,4 +1,4 @@
-const LeaderBoardJsonTransformer = require('./LeaderBoardJsonTransformer');
+const LeaderBoardJsonTransformer = require('./LeaderBoardJsonTransformer').default;
 
 
 test('Transform empty leaderboard', () => {

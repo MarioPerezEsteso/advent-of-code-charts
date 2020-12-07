@@ -79,4 +79,4 @@ const LeaderBoardJsonTransformer = (apiJsonResponse) => {
     return chartData
 }
 
-module.exports = LeaderBoardJsonTransformer
+export default LeaderBoardJsonTransformer
