@@ -1,5 +1,5 @@
-const stringToHexColor = require("./StringToHexColor");
-const sortAlphabetically = require("./SortAlphabetically");
+import stringToHexColor from "./StringToHexColor";
+import sortAlphabetically from "./SortAlphabetically";
 
 const leaderBoardJsonTransformer = (apiJsonResponse) => {
     let chartData = {
@@ -13,7 +13,7 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
 
     let leaderBoardMembers = Object.entries(apiJsonResponse['members'])
 
-    if (leaderBoardMembers.length == 0) {
+    if (leaderBoardMembers.length === 0) {
         return chartData;
     }
 
@@ -21,7 +21,7 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
 
     leaderBoardMembers.forEach(([userId, userData]) => {
         Object.entries(userData['completion_day_level']).forEach(([day, problemsSolved]) => {
-            if (day == '1') {
+            if (day === '1') {
                 // Day one is skipped in the leaderboard by Advent of Code organization
                 return;
             }
@@ -93,4 +93,4 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
     return chartData
 }
 
-module.exports = leaderBoardJsonTransformer
+export default leaderBoardJsonTransformer

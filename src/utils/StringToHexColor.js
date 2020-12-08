@@ -23,4 +23,4 @@ const stringToHexColor = str => {
     return "#" + "00000".substring(0, 6 - c.length) + c;
 }
 
-module.exports = stringToHexColor
+export default stringToHexColor

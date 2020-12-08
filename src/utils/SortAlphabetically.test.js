@@ -1,4 +1,4 @@
-const sortAlphabetically = require('./SortAlphabetically');
+import sortAlphabetically from './SortAlphabetically';
 
 
 test('sort alphabetically by name ASC', () => {
