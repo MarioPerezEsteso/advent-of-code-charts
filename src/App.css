@@ -1,6 +1,11 @@
 .App {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
+}
+
+.github-btn-row {
+  padding-bottom: 20px;
 }
 
 .chart {

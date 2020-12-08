@@ -16,11 +16,12 @@ const DataTextArea = ({ dataHandler }) => {
 
     return (
         <div className="form-group">
-            <label htmlFor="exampleFormControlTextarea1">
-                Enter your leaderboard data as JSON<br />
+            <h5>Enter your leaderboard data as JSON</h5>
+            <div className="alert alert-info">
                 Get it by appending a <code>.json</code> at the end of your leaderboard page:<br />
-                <small>https://adventofcode.com/2020/leaderboard/private/view/<code>your-leaderboard-id</code>.json</small></label>
-            <textarea className="form-control" id="exampleFormControlTextarea1" rows="10" onChange={onChange} onPaste={onPaste} defaultValue={data}></textarea>
+                <small>https://adventofcode.com/2020/leaderboard/private/view/<code>your-leaderboard-id</code>.json</small>
+            </div>
+            <textarea className="form-control" id="text-area-json-input" rows="4" onChange={onChange} onPaste={onPaste} defaultValue={data}></textarea>
         </div>
     )
 }

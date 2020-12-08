@@ -18,12 +18,19 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className='container-fluid'>
+      <div className="container">
+        <div className="row github-btn-row">
+          <div className="offset-1 col-10">
+            <a href="https://github.com/MarioPerezEsteso/advent-of-code-charts" className="btn btn-primary">View this project on GitHub</a>
+          </div>
+        </div>
         <div className='row'>
-          <div className='col-3'>
+          <div className='offset-1 col-10'>
             <DataTextArea dataHandler={handleData} />
           </div>
-          <div className='col-9'>
+        </div>
+        <div className="row">
+          <div className='col'>
             <div className='chart'>
               <LineChart data={linearChartData} />
             </div>
