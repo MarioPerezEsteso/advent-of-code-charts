@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/advent-of-code-charts/static/css/main.3f6bb105.chunk.css",
-    "main.js": "/advent-of-code-charts/static/js/main.c1f0c6a0.chunk.js",
-    "main.js.map": "/advent-of-code-charts/static/js/main.c1f0c6a0.chunk.js.map",
+    "main.js": "/advent-of-code-charts/static/js/main.236f43f0.chunk.js",
+    "main.js.map": "/advent-of-code-charts/static/js/main.236f43f0.chunk.js.map",
     "runtime-main.js": "/advent-of-code-charts/static/js/runtime-main.40efa9fc.js",
     "runtime-main.js.map": "/advent-of-code-charts/static/js/runtime-main.40efa9fc.js.map",
     "static/css/2.1a02f21c.chunk.css": "/advent-of-code-charts/static/css/2.1a02f21c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.1d2b4497.chunk.js",
     "static/css/main.3f6bb105.chunk.css",
-    "static/js/main.c1f0c6a0.chunk.js"
+    "static/js/main.236f43f0.chunk.js"
   ]
 }
