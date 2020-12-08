@@ -17,6 +17,7 @@ test('Transform empty leaderboard', () => {
 });
 
 
+
 test('Transform leaderboard with a single member that has not resolved any problem', () => {
   let jsonData = {
     "event": "2020",
@@ -45,6 +46,40 @@ test('Transform leaderboard with a single member that has not resolved any probl
         fill: false,
         backgroundColor: '#43456C',
         borderColor: '#43456C'
+      }
+    ]
+  });
+})
+
+
+test('Transform leaderboard with a single null member that has not resolved any problem', () => {
+  let jsonData = {
+    "event": "2020",
+    "members": {
+      "123456": {
+        "global_score": 0,
+        "stars": 0,
+        "id": "123456",
+        "local_score": 0,
+        "last_star_ts": 0,
+        "completion_day_level": {},
+        "name": null
+      }
+    },
+    "owner_id": "123456"
+  }
+
+  let result = leaderBoardJsonTransformer(jsonData)
+
+  expect(result).toEqual({
+    labels: [],
+    datasets: [
+      {
+        label: 'anonymous123456',
+        data: [],
+        fill: false,
+        backgroundColor: '#6B4AAA',
+        borderColor: '#6B4AAA'
       }
     ]
   });
