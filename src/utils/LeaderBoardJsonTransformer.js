@@ -7,6 +7,10 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
         datasets: []
     }
 
+    if (!('members' in apiJsonResponse)) {
+        return chartData;
+    }
+
     let leaderBoardMembers = Object.entries(apiJsonResponse['members'])
 
     if (leaderBoardMembers.length == 0) {
