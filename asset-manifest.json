@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/advent-of-code-charts/static/css/main.b75816bb.chunk.css",
-    "main.js": "/advent-of-code-charts/static/js/main.6f27fb57.chunk.js",
-    "main.js.map": "/advent-of-code-charts/static/js/main.6f27fb57.chunk.js.map",
-    "runtime-main.js": "/advent-of-code-charts/static/js/runtime-main.9b410b47.js",
-    "runtime-main.js.map": "/advent-of-code-charts/static/js/runtime-main.9b410b47.js.map",
+    "main.js": "/advent-of-code-charts/static/js/main.0b952526.chunk.js",
+    "main.js.map": "/advent-of-code-charts/static/js/main.0b952526.chunk.js.map",
+    "runtime-main.js": "/advent-of-code-charts/static/js/runtime-main.40efa9fc.js",
+    "runtime-main.js.map": "/advent-of-code-charts/static/js/runtime-main.40efa9fc.js.map",
     "static/css/2.1a02f21c.chunk.css": "/advent-of-code-charts/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.1f7cb651.chunk.js": "/advent-of-code-charts/static/js/2.1f7cb651.chunk.js",
-    "static/js/2.1f7cb651.chunk.js.map": "/advent-of-code-charts/static/js/2.1f7cb651.chunk.js.map",
-    "static/js/3.23a90b0a.chunk.js": "/advent-of-code-charts/static/js/3.23a90b0a.chunk.js",
-    "static/js/3.23a90b0a.chunk.js.map": "/advent-of-code-charts/static/js/3.23a90b0a.chunk.js.map",
+    "static/js/2.1d2b4497.chunk.js": "/advent-of-code-charts/static/js/2.1d2b4497.chunk.js",
+    "static/js/2.1d2b4497.chunk.js.map": "/advent-of-code-charts/static/js/2.1d2b4497.chunk.js.map",
+    "static/js/3.358b5ad1.chunk.js": "/advent-of-code-charts/static/js/3.358b5ad1.chunk.js",
+    "static/js/3.358b5ad1.chunk.js.map": "/advent-of-code-charts/static/js/3.358b5ad1.chunk.js.map",
     "index.html": "/advent-of-code-charts/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/advent-of-code-charts/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.b75816bb.chunk.css.map": "/advent-of-code-charts/static/css/main.b75816bb.chunk.css.map",
-    "static/js/2.1f7cb651.chunk.js.LICENSE.txt": "/advent-of-code-charts/static/js/2.1f7cb651.chunk.js.LICENSE.txt"
+    "static/js/2.1d2b4497.chunk.js.LICENSE.txt": "/advent-of-code-charts/static/js/2.1d2b4497.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b410b47.js",
+    "static/js/runtime-main.40efa9fc.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.1f7cb651.chunk.js",
+    "static/js/2.1d2b4497.chunk.js",
     "static/css/main.b75816bb.chunk.css",
-    "static/js/main.6f27fb57.chunk.js"
+    "static/js/main.0b952526.chunk.js"
   ]
 }
