@@ -70,7 +70,7 @@ const leaderBoardJsonTransformer = (apiJsonResponse) => {
         let userAsRGBColor = stringToHexColor(apiJsonResponse['members'][userId]['name'] + userId);
 
         let dataset = {
-            label: apiJsonResponse['members'][userId]['name'],
+            label: apiJsonResponse['members'][userId]['name'] || "anonymous" + userId,
             data: [],
             fill: false,
             backgroundColor: userAsRGBColor,
