@@ -1,4 +1,4 @@
-const stringToHexColor = require('./StringToHexColor');
+import stringToHexColor from './StringToHexColor';
 
 
 test('generate RGB color from integer', () => {

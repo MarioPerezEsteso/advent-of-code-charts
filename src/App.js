@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { LineChart, DataTextArea } from './components'
+import leaderBoardJsonTransformer from './utils/LeaderBoardJsonTransformer'
 import './App.css';
-const leaderBoardJsonTransformer = require('./utils/LeaderBoardJsonTransformer');
 
 const App = () => {
   const [linearChartData, setLinearChartData] = useState({})

@@ -11,4 +11,4 @@ const sortAlphabetically = (property, order = 'ASC') => {
         b[property].localeCompare(a[property]) : a[property].localeCompare(b[property]);
 }
 
-module.exports = sortAlphabetically
+export default sortAlphabetically
